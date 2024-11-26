@@ -74,7 +74,10 @@ With the new column created we can easily spot faults of the riding time. For ex
 - ended_month
 
 
-## The analysis process with all the SQL queries aren't located in this .md file.
+## Analysis
+![Percentage Casual-Annual](https://github.com/user-attachments/assets/4ca48fa1-1ce7-4224-8b8e-443c9f4916f1)
+
+
 
 
 ## Conclusions
