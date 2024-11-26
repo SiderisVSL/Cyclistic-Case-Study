@@ -23,7 +23,7 @@ To better understand the differences between casual riders & annual members we h
 
 Prepare
 
-The dataset is public and available by Motivate International Inc. under this [licence](https://divvybikes.com/data-license-agreement).
+The dataset is public and available by Motivate International Inc. under this licence (https://divvybikes.com/data-license-agreement/).
 The data is organized by month. We will use the last 12 months for the case study. 
 All CSV files are containg 13 columns with data about bike rides. 
 All 12 files of data will be stored to a master folder. 
