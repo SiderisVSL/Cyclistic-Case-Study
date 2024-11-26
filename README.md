@@ -75,7 +75,43 @@ With the new column created we can easily spot faults of the riding time. For ex
 
 
 ## Analysis
-![Percentage Casual-Annual](https://github.com/user-attachments/assets/4ca48fa1-1ce7-4224-8b8e-443c9f4916f1)
+
+### SQL Queries
+
+The following images are screenshots of SQL code.
+I used Google Cloud's Big Query data platform. 
+
+#### Create Table
+<img width="699" alt="Create Table" src="https://github.com/user-attachments/assets/876b3419-d332-4f6c-9f3a-069de319166a">
+
+#### Insert 12 tables into 1
+<img width="902" alt="Insert Tables (12)" src="https://github.com/user-attachments/assets/1bd5e2ea-3721-4d50-80b6-a27e8a8f61ae">
+
+#### Percentage of Casual/Annual
+<img width="1114" alt="per casual annual" src="https://github.com/user-attachments/assets/144e928d-9ac6-4b2c-8d6c-22dcdbc9b02c">
+
+#### Daily Total Rides
+<img width="774" alt="daily total rides" src="https://github.com/user-attachments/assets/6191d360-6231-4454-b6da-aa90bbfeb35b">
+
+#### Monthly Total Rides
+<img width="938" alt="Month total rides" src="https://github.com/user-attachments/assets/38914916-d343-432a-ba52-2d9d9486b39c">
+
+#### Average Duration (seconds)
+<img width="916" alt="average duration" src="https://github.com/user-attachments/assets/63cdd053-911f-4fcd-9743-8b64401a983f">
+
+#### Ratio of bike type between Casual / Annual
+<img width="1141" alt="ratio" src="https://github.com/user-attachments/assets/3d07b875-0973-462c-817a-d73652ce08cd">
+
+
+### Charts
+
+
+
+
+
+
+
+
 
 
 
