@@ -90,7 +90,7 @@ The analysis of bike usage has revealed important facts about the behavior of ca
    This suggests that casual riders enjoy longer rides during their leisure time.
 
 
-#### Overall, the analysis shows clear differences in trends and preferences between casual and annual bike users, indicating how membership type affects riding behavior, seasonal influences, and daily usage patterns. This information could be helpful for bike-sharing programs or city planners looking to improve user experience and boost ridership.
+### Overall, the analysis shows clear differences in trends and preferences between casual and annual bike users, indicating how membership type affects riding behavior, seasonal influences, and daily usage patterns. This information could be helpful for bike-sharing programs or city planners looking to improve user experience and boost ridership.
 
 
 
