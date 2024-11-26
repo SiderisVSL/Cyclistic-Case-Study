@@ -35,23 +35,41 @@ All 12 files of data will be stored to a master folder.
 rideable_type
 member_casual
 * Remove unwanted columns. Columns such as: 
-ride_id
-start_station_name
-start_station_id
-end_station_name 
-end_station_id
-start_lat
-start_lng
-end_lat
+ride_id,
+
+start_station_name,
+
+start_station_id,
+
+end_station_name, 
+
+end_station_id,
+
+start_lat,
+
+start_lng,
+
+end_lat,
+
 end_lng
+
+
 * Split timestamps columns into new columns with the following names:
-started_date
-started_time
-started_day
-started_month
-ended_date
-ended_time
-ended_day
+
+started_date,
+
+started_time,
+
+started_day,
+
+started_month,
+
+ended_date,
+
+ended_time,
+
+ended_day,
+
 ended_month
 
 * Add a new column “ride_duration” with the duration of each ride. The ride_duration column will be the result of the subtraction of the columns:
