@@ -74,159 +74,25 @@ With the new column created we can easily spot faults of the riding time. For ex
 - ended_month
 
 
-## Analysis
+## The analysis process with all the SQL queries aren't located in this .md file.
 
 
-### Create Table  
+## Conclusions
 
-CREATE TABLE `vproject77.Cyclistic.annual_data_2024`
-(
-  rideable_type STRING,
-  member_casual STRING,
-  ride_duration TIME,
-  started_date DATE,
-  started_time TIME,
-  started_day STRING,
-  started_month STRING,
-  ended_date DATE,
-  ended_time TIME,
-  ended_day STRING,    
-  ended_month STRING   
-);
+The analysis of bike usage has revealed important facts about the behavior of casual riders and annual members.
+
+1. Membership Distribution: The data shows that annual members make up a large portion of the entries at 64.31%, while casual users account for 35.69%. This indicates that annual memberships are more popular, with 3,582,156 annual members compared to 1,987,799 casual riders.
+2. Preferences for Bicycle Types: Both groups show similar preferences for bike types. While there are differences in overall usage, casual users and members don’t have significant differences in the types of bikes they prefer.
+   This suggests they enjoy similar experiences with the available bikes.
+3. Day Usage Patterns: Casual users ride more on weekends, while annual members ride the most on Wednesdays. This difference may reflect their lifestyles, with casual riders using the service more for leisure activities at the end of the week.
+4. Seasonal Trends: There is a clear seasonal pattern in usage, with peaks in June, July, and August, and lows in December, January, and February. This trend is consistent for both casual and annual users, highlighting how weather affects biking.
+5. Average Ride Duration: Casual riders tend to spend more time riding per trip than annual members. For example, casual riders have an average ride duration of 54.36 seconds on Sundays, while annual members peak at 42.96 seconds on Saturdays.
+   This suggests that casual riders enjoy longer rides during their leisure time.
 
 
-### Insert Tables(12)  
-
-INSERT INTO `vproject77.Cyclistic.annual_data_2024`
-SELECT * FROM `vproject77.Cyclistic.202309`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202310`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202311`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202312`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202401`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202402`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202403`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202404`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202405`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202406`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202407`
-UNION ALL
-SELECT * FROM `vproject77.Cyclistic.202408`;
+#### Overall, the analysis shows clear differences in trends and preferences between casual and annual bike users, indicating how membership type affects riding behavior, seasonal influences, and daily usage patterns. This information could be helpful for bike-sharing programs or city planners looking to improve user experience and boost ridership.
 
 
-### Percentage Casual/Annual  
 
-select 
-  member_casual as member_type,
-  count(*) as total_rides,
-  round ( count(*) * 100 / (select count(*) from `vproject77.Cyclistic.annual_data_2024`), 2) as riders_percentage
-
-from `vproject77.Cyclistic.annual_data_2024`
-
-group by member_casual
-
-### Month Total Rides  
-
-SELECT 
-  started_month as Month,
-  member_casual as member_type,
-  count(*) as Month_Rides
-
-FROM
-  `vproject77.Cyclistic.annual_data_2024`
-
-GROUP BY 
-  member_casual,
-  started_month
-
-ORDER BY 
-  CASE 
-    WHEN started_month = 'January' THEN 1
-    WHEN started_month = 'February' THEN 2
-    WHEN started_month = 'March' THEN 3
-    WHEN started_month = 'April' THEN 4
-    WHEN started_month = 'May' THEN 5
-    WHEN started_month = 'June' THEN 6
-    WHEN started_month = 'July' THEN 7
-    WHEN started_month = 'August' THEN 8
-    WHEN started_month = 'September' THEN 9
-    WHEN started_month = 'October' THEN 10
-    WHEN started_month = 'November' THEN 11
-    WHEN started_month = 'December' THEN 12
-  END,
-  member_casual;
-
-
-### Day Total Rides  
-
-SELECT 
-  started_day as Weekday,
-  member_casual as member_type,
-  count(*) as Day_Rides
-
-FROM
-  `vproject77.Cyclistic.annual_data_2024`
-
-GROUP BY 
-  member_casual,
-  started_day
-
-ORDER BY 
-  CASE 
-    WHEN started_day = 'Monday' THEN 1
-    WHEN started_day = 'Tuesday' THEN 2
-    WHEN started_day = 'Wednesday' THEN 3
-    WHEN started_day = 'Thursday' THEN 4
-    WHEN started_day = 'Friday' THEN 5
-    WHEN started_day = 'Saturday' THEN 6
-    WHEN started_day = 'Sunday' THEN 7
-  END,
-  member_casual;
-
-### Average Duration (sec)
-
-SELECT 
-  member_casual as member_type,
-  ROUND(AVG(EXTRACT(HOUR from ride_duration) * 60 + 
-      EXTRACT(MINUTE from ride_duration) + 
-      EXTRACT(SECOND from ride_duration)), 2) AS avg_duration_sec,
-  started_day AS Weekday
-FROM 
-  `vproject77.Cyclistic.annual_data_2024`
-GROUP BY 
-  member_casual, 
-  started_day
-ORDER BY
-  CASE 
-    WHEN started_day = 'Monday' THEN 1
-    WHEN started_day = 'Tuesday' THEN 2
-    WHEN started_day = 'Wednesday' THEN 3
-    WHEN started_day = 'Thursday' THEN 4
-    WHEN started_day = 'Friday' THEN 5
-    WHEN started_day = 'Saturday' THEN 6
-    WHEN started_day = 'Sunday' THEN 7
-  END;
-
-
-### Ratio of bike type between casual riders / annual members
-
-select 
-  rideable_type as bike_type,
-  member_casual as member_type,
-  count(*) as total_rides,
-  round ( count(*) * 100 / (select count(*) from `vproject77.Cyclistic.annual_data_2024`), 2) as riders_percentage
-
-from `vproject77.Cyclistic.annual_data_2024`
-
-group by member_casual, rideable_type
 
 
