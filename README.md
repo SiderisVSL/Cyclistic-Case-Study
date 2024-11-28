@@ -18,7 +18,6 @@ To better understand the differences between casual riders & annual members we h
 * Average ride duration per day
 * Ratio of bike type between casual riders / annual members
 * Percentage of rides per month
-* Peak time of riders (weekly)
 
 
 ## Prepare
