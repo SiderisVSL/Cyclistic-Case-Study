@@ -4,6 +4,8 @@ This case study is an analysis for the integration of Coursera’s: Google Data 
 Because Cyclistic is a fictional company, for the purpose of the course the data will be used dirived from a company named DIVVY.
 The dataset is public and available by Motivate International Inc. under this [lisence](https://divvybikes.com/data-license-agreement) 
 
+### Spreadsheets (cleaned) [Link](https://drive.google.com/drive/folders/10l2exj4lMSVU3iPtiGMmvJzz3SK18ngX?usp=share_link) 
+
 
 ## Business Task
 In the following analysis we will find differences between casual riders and annual(members). We will provide the stakeholders with these insights so the marketing team could use them in order to convert casual riders to annual members. 
