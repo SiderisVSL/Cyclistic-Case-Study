@@ -122,7 +122,7 @@ I used Google Cloud's Big Query data platform.
 
 ### Charts
 
-#### There are some charts which give us very important findings.
+#### There are some charts which can give us very important findings.
 
 ##### Percentage of the casual riders and annual members.
 ![Percentage_ Casual - Annual](https://github.com/user-attachments/assets/e52a7df3-b8e3-4112-b11e-b81af7706a52)
