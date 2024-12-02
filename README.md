@@ -5,7 +5,7 @@ Because Cyclistic is a fictional company, for the purpose of the course the data
 The dataset is public and available by Motivate International Inc. under this [lisence](https://divvybikes.com/data-license-agreement) 
 
 #### [Spreadsheets (cleaned)](https://drive.google.com/drive/folders/10l2exj4lMSVU3iPtiGMmvJzz3SK18ngX?usp=share_link)
-#### [CSVs (cleaned)](https://drive.google.com/drive/folders/10l2exj4lMSVU3iPtiGMmvJzz3SK18ngX?usp=share_link)
+#### [CSVs (cleaned)](https://drive.google.com/drive/folders/1Zhay_UflEAOu9WE0W5X6ncuNs7b5IqJn?usp=share_link)
 
 
 ## Business Task
