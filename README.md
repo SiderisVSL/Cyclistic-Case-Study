@@ -122,14 +122,22 @@ I used Google Cloud's Big Query data platform.
 
 ### Charts
 
+#### There are some charts which give us very important findings.
 
+##### Percentage of the casual riders and annual members.
+![Percentage_ Casual - Annual](https://github.com/user-attachments/assets/e52a7df3-b8e3-4112-b11e-b81af7706a52)
 
+##### An annual total of rides between the groups categorized by daily basis.
+![Daily Total Rides](https://github.com/user-attachments/assets/fdbdbdce-514e-49d7-9db5-8fffd001a82c)
 
+##### An annual total of rides between the groups categorized by monthly basis.
+![Monthly Total Rides](https://github.com/user-attachments/assets/f15ad547-0a78-48c1-9661-cd1b759384dd)
 
+##### Average Duration (seconds) of the two groups in daily basis.
+![Average Duration](https://github.com/user-attachments/assets/75a572da-80e5-4f22-941e-bbc3d9ac541f)
 
-
-
-
+##### Ratio between the two groups and their bike type preference. 
+![Bike Type Ratio](https://github.com/user-attachments/assets/b290fff7-f9ff-4bf1-95e8-c5fc2cbd680a)
 
 
 
