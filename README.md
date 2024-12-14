@@ -6,7 +6,7 @@ The dataset is public and available by Motivate International Inc. under this [l
 
 #### [Spreadsheets (cleaned)](https://drive.google.com/drive/folders/10l2exj4lMSVU3iPtiGMmvJzz3SK18ngX?usp=share_link)
 #### [CSVs (cleaned)](https://drive.google.com/drive/folders/1Zhay_UflEAOu9WE0W5X6ncuNs7b5IqJn?usp=share_link)
-#### [Tableau Public Charts](https://public.tableau.com/app/profile/vasileios.sideris/viz/Cyclistic-CaseStudyDashboardCharts/Dashboard1)
+#### [Tableau Public Dashboard Charts](https://public.tableau.com/app/profile/vasileios.sideris/viz/Cyclistic-CaseStudyDashboardCharts/Dashboard1)
 
 ## Business Task
 In the following analysis we will find differences between casual riders and annual(members). We will provide the stakeholders with these insights so the marketing team could use them in order to convert casual riders to annual members. 
